@@ -1,6 +1,6 @@
 # AspireHub-AI 2.0 🧭 - GenAI Career Counselling System
 
-> AI-powered career counselling covering 500+ career paths across every field — from tech to culinary arts, music to medicine, fashion to finance. Not just another tech career tool
+> AI-powered career counselling covering 500+ career paths across every field — from tech to culinary arts, music to medicine, fashion to finance. Not just another tech career tool.>
 
 ---
 
