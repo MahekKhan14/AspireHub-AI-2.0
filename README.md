@@ -261,4 +261,4 @@ Version 2 upgrades the platform from a career recommendation system into a compl
 
 ---
 
-*Crafted with ♥ by Mahek
+*Crafted with ♥ by Mahek*
