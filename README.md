@@ -6,7 +6,7 @@
 
 ## 🔗 Links
 
-📌 GitHub v1: [AspireHub-AI](https://github.com/MahekKhan14/AspireHub-AI) — See v2 for the full GenAI upgrade
+📌 GitHub v1: [AspireHub-AI](https://github.com/MahekKhan14/AspireHub-AI) — See v2 for the full GenAI upgrade.
 
 ---
 
