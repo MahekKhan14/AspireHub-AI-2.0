@@ -18,7 +18,7 @@
 }
 .hero__orb--1 {
   width: 500px; height: 500px;
-  background: radial-gradient(circle, #FDE68A, transparent);
+  background: radial-gradient(circle, #34cb4d, transparent);
   top: -100px; left: -100px;
   animation: orbFloat 12s ease-in-out infinite;
 }
