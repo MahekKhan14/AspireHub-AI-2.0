@@ -9,7 +9,7 @@ const authenticate = async (req, res, next) => {
     }
 
     const token = authHeader.split(' ')[1];
-    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'fallback_secret');
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
     const user = await User.findById(decoded.userId);
     if (!user) {
@@ -38,14 +38,9 @@ const requireAdmin = async (req, res, next) => {
     }
 
     if (!user.isAdmin) {
-      // For demo: allow access if email contains 'admin' or is the first user
-      const firstUser = await User.findOne().sort({ createdAt: 1 });
-      if (!firstUser || firstUser._id.toString() !== user._id.toString()) {
-        if (!user.email.includes('admin')) {
-          return res.status(403).json({ error: 'Admin access required' });
-        }
-      }
+      return res.status(403).json({ error: 'Admin access required' });
     }
+
     next();
   } catch (err) {
     next(err);

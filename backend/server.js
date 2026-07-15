@@ -4,6 +4,11 @@ const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 require('dotenv').config();
 
+if (!process.env.JWT_SECRET) {
+  console.error('FATAL: JWT_SECRET is not set in environment variables.');
+  process.exit(1);
+}
+
 const connectDB = require('./config/database');
 const authRoutes = require('./routes/auth');
 const careerRoutes = require('./routes/career');
